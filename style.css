@@ -123,25 +123,26 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   
   }
 
-  #port{
+  #item{
     background-color: aquamarine;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
     width: 100%;
     gap: 50px;
+    margin-top: 70px;
+    align-items: center;
   }
 
   .gallery-item{
-    width: 320px;
-    height: 220px;
-    position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
     overflow: hidden;
   }
 
   .gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 320px;
+    height: 220px;
   }
+    
 
 

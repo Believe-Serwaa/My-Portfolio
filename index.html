@@ -1,61 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-   <link rel="stylesheet" href="./style.css">
-   <link rel="stylesheet" href="./reset.css">
-   
-</head>
-<body>
-  <nav>
-    <!-- <h4 class="text-white"><span style="color:black;">Kw.</span>Believe</h4> -->
-    <a href="#" class="text-center float-left logo box-sizing">KB</a>
-    <div class="nav-items">
-      <a class="text-black" href="#">Home</a>
-      <a class="text-black" href="#">About</a>
-      <a class="text-black" href="#">Portfolio</a>
-      <a class="text-black" href="#">Services</a>
-      <a class="text-black" href="#">Resume</a>
-      <a class="text-black" href="#">Contact</a>
-      <button class="btn-header ti-arrow-right">Let's Talk</button>
-      
-    </div>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio Website</title>
+    
+    <link rel="stylesheet" href="./style.css" />
+    
+    <link href="img/favicon.ico" rel="icon" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-user"></i> About</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-cog"></i> Service</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-briefcase"></i> Portfolio</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-  <section id="hero">
-    <div class="overlay">
-      <p>Hello</p>
-      <h1 id="hero-title">I'm Believe Kwamitse</h1>
-      <h1 id="hero-subtext">A Junior Web Developer</h1>
-      <div>
-        <div>
-          <button class="btn btn-blue">Hire Me</button>
-          <button class="btn btn-blue">Contact Me</button>
+      <div class="content">
+        <!-- <span class="title">Junior Front-end Developer</span> -->
+        <h1>Hello, I’m <span>Believe Kwamitse</span></h1>
+        <p>
+          A junior front-end developer dedicated to building user-friendly and visually appealing web interfaces using HTML, CSS, and JavaScript, with a focus on creating responsive components that enhance user experience."
+        </p>
       </div>
-      </div>
-      
     </div>
-  </section>
 
-  <section>
-    <div class="about-me">
-     <img src="./images/img1.jpg" alt="#">
-      
+    <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-lg-4">
+            <div class="about-img">
+              <img src="./images/image1.jpg" alt="Image" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-content">
+              <div class="section-header text-left">
+                <h1>About Me</h1>
+              </div>
+              <div class="about-text">
+                <p>
+                 I'm a passionate and dedicated individual with a strong drive for personal and professional growth. With a background in computer science, I bring creativity, enthusiasm, and a solution-oriented mindset to everything I do.
 
-      <div>
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet omnis dolore quibusdam magnam, excepturi necessitatibus, aspernatur rem commodi totam, temporibus ipsum nobis harum accusamus dolorem. Incidunt, ipsam laborum, enim rerum fugiat, debitis ratione mollitia dolore qui omnis reiciendis accusantium numquam quos! Placeat autem fugit ipsum illum. Rem ea eius eaque? Odit nam dignissimos qui deserunt ea earum corrupti minus culpa.</p>
+I thrive in environments where I can collaborate with diverse teams, take on new challenges, and continuously learn new things. Outside of work, I enjoy streaming content,reading which help me stay inspired and energized.
+
+I'm always looking to grow, connect with like-minded people, and contribute to exciting projects that make a positive impact.
+                  
+                </p>
+              </div>
+              <h1>Skills</h1>
+              <div class="skills">
+                <div class="skill-name">
+                  <p>HTML</p>
+                  <p>80%</p>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div class="skill-name">
+                  <p>CSS</p>
+                  <p>75%</p>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div class="skill-name">
+                  <p>JAVASCRIPT</p>
+                  <p>70%</p>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div class="skill-name">
+                  <p>REACT</p>
+                  <p>50%</p>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <a class="btn" href="">Hire Me</a>
+            </div>
+          </div>
+        </div>
       </div>
-      
     </div>
-  </section>
+    
 
-  
+    <!-- Experience Start -->
+    <div class="experience">
+      <div class="experience-header">
+        <p>My Resume</p>
+        <h2>Working Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+          <div class="timeline-text">
+            <div class="timeline-date">2022 - 2023</div>
+            <h2>Content Creator</h2>
+            <h4>Kauri Africa, Remote</h4>
+            <p>
+              Created engaging multimedia content across various platforms,
+              focusing on audience growth and brand consistency.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+          <div class="timeline-text">
+            <div class="timeline-date">2020 - 2021</div>
+            <h2>Service Personnel</h2>
+            <h4>MASLOC, Ho-Ghana</h4>
+            <p>
+              Served as a dedicated national service personnel, contributing to various administrative and community development projects. Assisted in data management and supported team initiatives aimed at improving organizational efficiency and service delivery.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+          <div class="timeline-text">
+            <div class="timeline-date">2019 - 2021</div>
+            <h2>Intern Data Entry Clerk</h2>
+            <h4>Ghana Revenue Authority, Ho-Ghana</h4>
+            <p>
+              Accurately entered tax-related data into the Ghana Revenue Authority's database, ensuring timely and error-free updates. 
+            </p>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+
+
+
+<!-- Education Start -->
+<div class="education">
+  <div class="education-header">
+    <p>My Resume</p>
+    <h2>Education</h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+      <div class="timeline-text">
+        <div class="timeline-date">2019 - 2021</div>
+        <h2>MEST Training Program</h2>
+        <h4>Accra, Ghana</h4>
+        <p>
+          Completed the MEST training program with a focus on Front End Development, acquiring skills in HTML, CSS, and JavaScript. Engaged in collaborative projects that enhanced problem-solving abilities and practical coding experience.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+      <div class="timeline-text">
+        <div class="timeline-date">2017 - 2020</div>
+        <h2>Higher National Diploma in Computer Science</h2>
+        <h4>Ho Technical University, Ho</h4>
+        <p>
+          Studied foundational concepts in computer science, gaining exposure to IT fundamentals and general computing practices.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+      <div class="timeline-text">
+        <div class="timeline-date">2012 - 2015</div>
+        <h2>Senior High School</h2>
+        <h4>Sokode Secondary School, Sokode</h4>
+        <p>
+          Majored in Science, focusing on Mathematics, Physics, and Biology with additional studies in Chemistry. Developed strong analytical and problem-solving skills through coursework and collaborative projects.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
+<!-- Education End -->
 
-  <section id="works">
+
+
+
+
+
+    <!-- Experience End -->
+
+    <div class="service">
+      <div class="service-header">
+        <p>What I do</p>
+        <h2>Awesome Quality Services</h2>
+      </div>
+      <div class="row">
+        <div class="flex-item wow fadeInUp" data-wow-delay="0.6s">
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-laptop"></i>
+            </div>
+            <div class="service-text">
+              <h3>Web Design</h3>
+              <p>
+                I create visually appealing and user-friendly websites tailored to meet your needs. 
+            From layout design to color schemes, I ensure that your site provides an excellent user experience.
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex-item wow fadeInUp" data-wow-delay="0.2s">
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="service-text">
+              <h3>Web Development</h3>
+              <p>
+                Using the latest technologies like HTML, CSS, JavaScript, and modern frameworks, I develop fast, 
+            secure, and scalable websites to meet the specific requirements of your business.
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex-item wow fadeInUp" data-wow-delay="0.4s">
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="service-text">
+              <h3>Apps Design</h3>
+              <p>
+                I design mobile applications with a focus on intuitive user interfaces and seamless user experiences, 
+                ensuring that your app is both functional and easy to navigate.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex-item wow fadeInUp" data-wow-delay="0.6s">
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="service-text">
+              <h3>User Experience (UX) Enhancements</h3>
+              <p>
+                I focus on enhancing user experience by implementing interactive elements, ensuring accessibility, 
+                and creating intuitive navigation that keeps users engaged.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Start -->
+  
+
+  <div id="works">
     <div class="header">
       <h2>Portfolio</h2>
 
@@ -63,69 +301,84 @@
 
     <div id="gallery">
       <div class="gallery-item">
-        <img src="./images/portfolio.png" alt="gallery image" />
+        <img src="./images/port.png" alt="gallery image" />
         <div class="gallery-overlay">
           <span class="item">Portfolio</span>
       
         </div>
       </div>
       <div class="gallery-item">
-        <img src="./images/car rentals.png" alt="gallery image" />
+        <img src="./images/car.png" alt="gallery image" />
         <div class="gallery-overlay">
           <span class="item">Car rentals website</span>
           
         </div>
       </div>
       <div class="gallery-item">
-        <img src="./images/portfolio1.png" alt="gallery image" />
+        <img src="./images/web.png" alt="gallery image" />
         <div class="gallery-overlay">
-          <span class="item">Portfolio</span>
+          <span class="item">Website</span>
         
         </div>
       </div>
       <div class="gallery-item">
-        <img src="./images/foodee.png" alt="gallery image" />
+        <img src="./images/book.png" alt="gallery image" />
         <div class="gallery-overlay">
-          <span class="item">Food website</span>
+          <span class="item">Book management website</span>
+          
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/movie.png" alt="gallery image" />
+        <div class="gallery-overlay">
+          <span class="item">Movie Serach Website </span>
+          
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/edu.png" alt="gallery image" />
+        <div class="gallery-overlay">
+          <span class="item">Edu hub website</span>
           
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="services">
-    <div>
-     <h4><span class="service-title">My Services</span></h4>
-    </div>
-    
-    <div class="service-item">
-      <img src="./images/Figma-logo.svg.png" alt="figma">
-      <h4>Figma</h4>
-      <p>A collaborative web application for interface design, with additional offline features enabled by desktop applications for macOS and Windows.</p>
-    </div>
-  
-    <div class="service-item">
-      <img src="./images/web-design.png" alt="web-design">
-      <h4>Web Design</h4>
-      <p>A collaborative web application for interface design, with additional offline features enabled by desktop applications for macOS and Windows.</p>
-    </div>
-  
-    <div class="service-item">
-      <img src="./images/uiux.png" alt="UI/UX Design">
-      <h4>UI/UX Design</h4>
-      <p>A collaborative web application for interface design, with additional offline features enabled by desktop applications for macOS and Windows.</p>
-    </div>
-  
-    <div class="service-item">
-      <img src="./images/web app.png" alt="web apps">
-      <h4>Web Apps</h4>
-      <p>A collaborative web application for interface design, with additional offline features enabled by desktop applications for macOS and Windows.</p>
-    </div>
-
   </div>
-  </section>
+
+    <!-- Portfolio End -->
+
+     <!-- Footer Start -->
+     <div class="footer wow fadeIn" data-wow-delay="0.3s">
+      <div class="container-fluid">
+          <div class="container">
+              <div class="footer-info">
+                  
+                  <h3>Accra, Ghana</h3>
+                  <div class="footer-menu">
+                      <p>+233247827902</p>
+                      <p>believeserwaa80@gmail.com</p>
+                  </div>
+                  <div class="footer-social">
+                      <a href=""><i class="fab fa-twitter"></i></a>
+                      <a href=""><i class="fab fa-facebook-f"></i></a>
+                      <a href=""><i class="fab fa-youtube"></i></a>
+                      
+                      <a href=""><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="container copyright">
+              <p> 
+    
+    
+              Designed By <a href="https://htmlindex.com">KB</a></p>
+          </div>
+      </div>
+  </div>
+  <!-- Footer End -->
+  
   
 
- 
+    <script src="./main.js"></script>
   </body>
-  </html>
+</html>

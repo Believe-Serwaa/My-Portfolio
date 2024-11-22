@@ -12,126 +12,121 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+<link rel="stylesheet" href="./animate.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- WOW.js -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.2/dist/wow.min.js"></script> -->
+
+    <script>
+      // Initialize WOW.js
+      new WOW().init();
+    </script>
+    
   </head>
   <body>
-    <div class="hero">
+
+
+    
+    <div class="home" id="home">
       <nav>
+         <h4 class="logo">KB.</h4>
         <ul>
-          <li>
-            <a href="#"><i class="fas fa-home"></i> Home</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-user"></i> About</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-cog"></i> Service</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-briefcase"></i> Portfolio</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-envelope"></i> Contact</a>
-          </li>
+          
+          <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#service"><i class="fas fa-certificate"></i> Services</a></li>
+          <li><a href="#experience"><i class="fas fa-clipboard-list"></i> Experience</a></li>
+          <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
       </nav>
-
-      <div class="content">
-        <!-- <span class="title">Junior Front-end Developer</span> -->
-        <h1>Hello, I’m <span>Believe Kwamitse</span></h1>
-        <p>
-          A junior front-end developer dedicated to building user-friendly and visually appealing web interfaces using HTML, CSS, and JavaScript, with a focus on creating responsive components that enhance user experience."
-        </p>
-      </div>
-    </div>
-
-    <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-lg-4">
-            <div class="about-img">
-              <img src="./images/image1.jpg" alt="Image" />
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="about-content">
-              <div class="section-header text-left">
-                <h1>About Me</h1>
-              </div>
-              <div class="about-text">
-                <p>
-                 I'm a passionate and dedicated individual with a strong drive for personal and professional growth. With a background in computer science, I bring creativity, enthusiasm, and a solution-oriented mindset to everything I do.
-
-I thrive in environments where I can collaborate with diverse teams, take on new challenges, and continuously learn new things. Outside of work, I enjoy streaming content,reading which help me stay inspired and energized.
-
-I'm always looking to grow, connect with like-minded people, and contribute to exciting projects that make a positive impact.
-                  
-                </p>
-              </div>
-              <h1>Skills</h1>
-              <div class="skills">
-                <div class="skill-name">
-                  <p>HTML</p>
-                  <p>80%</p>
-                </div>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="80"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-                <div class="skill-name">
-                  <p>CSS</p>
-                  <p>75%</p>
-                </div>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-                <div class="skill-name">
-                  <p>JAVASCRIPT</p>
-                  <p>70%</p>
-                </div>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="70"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-                <div class="skill-name">
-                  <p>REACT</p>
-                  <p>50%</p>
-                </div>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="50"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-              <a class="btn" href="">Hire Me</a>
-            </div>
-          </div>
+    
+      <div class="hero-content">
+        <div class="content">
+          <h1>Hello, I’m <span>Believe Kwamitse</span></h1>
+          <p>
+            A junior front-end developer dedicated to building user-friendly and
+            visually appealing web interfaces using HTML, CSS, and JavaScript,
+            with a focus on creating responsive components that enhance user
+            experience.
+          </p>
+         
+        </div>
+    
+        <div class="hero-image">
+          <img src="./images/bee.jpg" alt="Hero Image" />
         </div>
       </div>
     </div>
     
+<!-- Hero End -->
+
+
+
+<!-- About starts here -->
+<div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+  <div class="container">
+    <div class="about-content">
+      <!-- Image column -->
+      <div class="about-img">
+        <img src="./images/image1.jpg" alt="Image" />
+      </div>
+      <!-- Text column -->
+      <div class="about-text">
+        <div class="section-header text-left">
+          <h1>About Me</h1>
+        </div>
+        <div class="about-text-description">
+          <p>
+            I'm a passionate and dedicated individual with a strong drive for personal and professional growth. With a background in computer science, I bring creativity, enthusiasm, and a solution-oriented mindset to everything I do.
+            I thrive in environments where I can collaborate with diverse teams, take on new challenges, and continuously learn new things. Outside of work, I enjoy streaming content, reading, which help me stay inspired and energized.
+            I'm always looking to grow, connect with like-minded people, and contribute to exciting projects that make a positive impact.
+          </p>
+        </div>
+        <h1>Skills</h1>
+        <div class="skills">
+          <div class="skill-name">
+            <p>HTML</p>
+            <p>80%</p>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%"></div>
+          </div>
+          <div class="skill-name">
+            <p>CSS</p>
+            <p>75%</p>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 75%"></div>
+          </div>
+          <div class="skill-name">
+            <p>JAVASCRIPT</p>
+            <p>70%</p>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 70%"></div>
+          </div>
+          <div class="skill-name">
+            <p>REACT</p>
+            <p>50%</p>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 50%"></div>
+          </div>
+        </div>
+        <a class="btn" href="#">Hire Me</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- Experience Start -->
-    <div class="experience">
+
+    <div class="experience" id="experience">
       <div class="experience-header">
         <p>My Resume</p>
         <h2>Working Experience</h2>
@@ -168,9 +163,8 @@ I'm always looking to grow, connect with like-minded people, and contribute to e
             </p>
           </div>
         </div>
-        
         </div>
-      </div>
+      
     </div>
 
 
@@ -216,16 +210,15 @@ I'm always looking to grow, connect with like-minded people, and contribute to e
     </div>
   </div>
 </div>
+</div>
 <!-- Education End -->
-
-
-
-
-
 
     <!-- Experience End -->
 
-    <div class="service">
+
+    <!-- Services start here -->
+
+    <div class="service" id="service">
       <div class="service-header">
         <p>What I do</p>
         <h2>Awesome Quality Services</h2>
@@ -292,7 +285,7 @@ I'm always looking to grow, connect with like-minded people, and contribute to e
 
     <!-- Portfolio Start -->
   
-
+<div class="portfolio" id="portfolio">
   <div id="works">
     <div class="header">
       <h2>Portfolio</h2>
@@ -344,6 +337,7 @@ I'm always looking to grow, connect with like-minded people, and contribute to e
       </div>
     </div>
   </div>
+</div>
 
     <!-- Portfolio End -->
 
@@ -379,6 +373,6 @@ I'm always looking to grow, connect with like-minded people, and contribute to e
   
   
 
-    <script src="./main.js"></script>
+    <!-- <script src="./script.js "></script> -->
   </body>
 </html>

@@ -26,14 +26,14 @@ nav {
   justify-content: space-between;
   padding: 10px 20px;
   background-color: transparent; /* Initially transparent */
-  position: relative;
+  position: relative; /* Use relative position instead of fixed */
   z-index: 999;
   transition: background-color 0.5s, padding 0.5s; /* Add transition for smooth change */
 }
 
-/* Sticky navbar */
+/* Sticky navbar - This is optional, only if you want a sticky effect */
 nav.nav-sticky {
-  position: fixed;
+  position: relative; /* Change position to relative */
   top: 0;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -100,7 +100,7 @@ nav ul li a:hover:after {
 /* Media queries for different screen sizes */
 @media (min-width: 992px) {
   nav {
-    position: absolute;
+    position: relative; /* Remove fixed position */
     width: 100%;
     padding: 30px 60px;
     background: transparent !important;
@@ -161,6 +161,17 @@ nav ul li a:hover:after {
   }
 }
 
+/* Add this to your CSS for a glass effect (optional) */
+nav {
+  background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+  backdrop-filter: blur(10px); /* Apply blur effect to background */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  padding: 15px 20px;
+  z-index: 1000; /* Ensure the navbar is above other content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for better visibility */
+}
+
+
 .hero-content {
   display: flex;
   align-items: center;
@@ -200,8 +211,8 @@ nav ul li a:hover:after {
   overflow: hidden; /* Ensures the image doesn't overflow */
   object-fit: cover; /* Maintains aspect ratio and fills the round area */
   border: 2px solid #EF233C; /* Optional: Adds a border */
-  margin-left: 700px;
-  margin-top: 150px;
+  margin-left: 800px;
+  margin-top: 60px;
   
 }
 

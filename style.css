@@ -898,7 +898,7 @@ nav {
 }
 
 .header {
-  width: 60%;
+  width: 80%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -914,20 +914,26 @@ nav {
 #gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 60%;
-  gap: 50px;
+  width: 80%;
+  gap: 30px;
   margin-bottom: 30px;
 }
 
 .gallery-item {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: auto;
+  max-height: 550px; /* Increased from 450px */
 }
 
 .gallery-item img {
-  width: 600px;
-  height: 300px;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  max-height: 500px; /* Increased from 400px */
+
 }
 
 .gallery-overlay {
@@ -943,11 +949,44 @@ nav {
   background-color: rgba(248, 61, 61, 0.8);
   color: white;
   opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .gallery-overlay:hover {
-  opacity: 2;
+  opacity: 1;
 }
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.item {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-overlay p {
+  text-align: center;
+  padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  #gallery {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+  
+  .gallery-item {
+    max-height: 450px; /* Increased from 400px */
+  }
+
+  .gallery-item img {
+    max-height: 400px; /* Increased from 350px */
+  }
+}
+
+
 
 
 /********* Footer CSS **********/
